@@ -19,7 +19,7 @@ rm -rf $1
 git clone --depth 1 https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8 serv && mv -f serv/*.sh . %% mv -n serv/*.js . && rm install-socks5-pm2.sh && rm -rdf serv
 
 # patch
-#sed -i 's/微信推送/TG Push/g' luci-app-wechatpush/po/zh_Hans/wechatpush.po
+sed -i 's/https:\/\/bing.com/https:\/\/dl.delivery.mp.microsoft.com/g' install-socks5-hysteria.sh
 #sed -i '4d' luci-app-wechatpush/root/usr/share/luci/menu.d/luci-app-wechatpush.json
 #sed -i '4 i\\t\t"order": 60,' luci-app-wechatpush/root/usr/share/luci/menu.d/luci-app-wechatpush.json
 #sed -i 's/, 30)/, 60)/g' feeds/ace8/luci-theme-serverchan/luasrc/controller/serverchan.lua
