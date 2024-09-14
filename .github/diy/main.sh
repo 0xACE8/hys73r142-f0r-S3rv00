@@ -16,7 +16,7 @@ function mvdir() {
 mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
-git clone --depth 1 https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8 serv && mv -f serv/*.sh . %% mv -n serv/*.js . && rm install-socks5-pm2.sh && rm -rdf serv
+git clone --depth 1 https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8
 
 # patch
 sed -i 's/https:\/\/bing.com/https:\/\/dl.delivery.mp.microsoft.com/g' install-socks5-hysteria.sh
