@@ -100,7 +100,7 @@ fastOpen: true
 masquerade:
   type: proxy
   proxy:
-    url: https://bing.com
+    url: https://dl.delivery.mp.microsoft.com
     rewriteHost: true
 
 transport:
