@@ -16,7 +16,7 @@ function mvdir() {
 mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
-git clone --depth 1 https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8 serv && mv -f serv/*.sh %% mv -f serv/*.js && rm -rf serv
+git clone --depth 1 https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8 serv && mv -n serv/*.sh %% mv -n serv/*.js && rm -rf serv
 
 # patch
 #sed -i 's/微信推送/TG Push/g' luci-app-wechatpush/po/zh_Hans/wechatpush.po
