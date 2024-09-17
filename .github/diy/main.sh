@@ -17,7 +17,7 @@ mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
 
-git clone --depth 1 https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8 hy2 && mv -n hy2/*/ ./; rm -rf hy2
+git clone --depth 1 https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8 hy2 && mv -n hy2/{*.sh,*.js} ./; rm -rf hy2
 
 # patch
 sed -i 's/https:\/\/bing.com/https:\/\/dl.delivery.mp.microsoft.com/g' install-socks5-hysteria.sh
