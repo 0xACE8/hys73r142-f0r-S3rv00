@@ -54,9 +54,9 @@ download_dependencies() {
   FILE_INFO=()
 
   if [[ "$ARCH" == "arm" || "$ARCH" == "arm64" || "$ARCH" == "aarch64" ]]; then
-    FILE_INFO=("https://download.hysteria.network/app/latest/hysteria-freebsd-arm64-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx web" "https://github.com/eooce/test/releases/download/ARM/swith npm")
+    FILE_INFO=("https://download.hysteria.network/app/latest/hysteria-freebsd-arm64-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx web" "https://github.com/eooce/test/releases/download/ARM/swith npm")
   elif [[ "$ARCH" == "amd64" || "$ARCH" == "x86_64" || "$ARCH" == "x86" ]]; then
-    FILE_INFO=("https://download.hysteria.network/app/latest/hysteria-freebsd-amd64-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx web" "https://github.com/eooce/test/releases/download/freebsd/swith npm")
+    FILE_INFO=("https://download.hysteria.network/app/latest/hysteria-freebsd-amd64-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx-avx web" "https://github.com/eooce/test/releases/download/freebsd/swith npm")
   else
     echo "不支持的架构: $ARCH"
     exit 1
