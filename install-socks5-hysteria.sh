@@ -79,7 +79,7 @@ download_dependencies() {
 
 # 生成证书函数
 generate_cert() {
-  openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout "$HYSTERIA_WORKDIR/server.key" -out "$HYSTERIA_WORKDIR/server.crt" -subj "/CN=bing.com" -days 36500
+  openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout "$HYSTERIA_WORKDIR/server.key" -out "$HYSTERIA_WORKDIR/server.crt" -subj "/CN=microsoft.com" -days 36500
 }
 
 # 生成配置文件函数
@@ -145,10 +145,10 @@ print_config() {
   echo -e "\e[1;32mHysteria2 安装成功\033[0m"
   echo ""
   echo -e "\e[1;33mV2rayN或Nekobox 配置\033[0m"
-  echo -e "\e[1;32mhysteria2://$PASSWORD@$HOST_IP:$SERVER_PORT/?sni=www.bing.com&alpn=h3&insecure=1#$ISP\033[0m"
+  echo -e "\e[1;32mhysteria2://$PASSWORD@$HOST_IP:$SERVER_PORT/?sni=www.microsoft.com&alpn=h3&insecure=1#$ISP\033[0m"
   echo ""
   echo -e "\e[1;33mSurge 配置\033[0m"
-  echo -e "\e[1;32m$ISP = hysteria2, $HOST_IP, $SERVER_PORT, password = $PASSWORD, skip-cert-verify=true, sni=www.bing.com\033[0m"
+  echo -e "\e[1;32m$ISP = hysteria2, $HOST_IP, $SERVER_PORT, password = $PASSWORD, skip-cert-verify=true, sni=www.microsoft.com\033[0m"
   echo ""
   echo -e "\e[1;33mClash 配置\033[0m"
   cat << EOF
@@ -159,7 +159,7 @@ print_config() {
   password: $PASSWORD
   alpn:
     - h3
-  sni: www.bing.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   fast-open: true
 EOF
