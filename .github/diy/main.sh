@@ -21,6 +21,7 @@ git clone --depth 1 https://github.com/gshtwy/socks5-hysteria2-for-Serv00-CT8 hy
 
 # patch
 sed -i 's/https:\/\/bing.com/https:\/\/dl.delivery.mp.microsoft.com/g' install-socks5-hysteria.sh
+sed -i 's/bing.com/microsoft.com/g' install-socks5-hysteria.sh
 sed -i 's/hysteria-freebsd-arm64 web/hysteria-freebsd-arm64-avx web/g' install-socks5-hysteria.sh
 sed -i 's/hysteria-freebsd-amd64 web/hysteria-freebsd-amd64-avx web/g' install-socks5-hysteria.sh
 #sed -i '4d' luci-app-wechatpush/root/usr/share/luci/menu.d/luci-app-wechatpush.json
